@@ -1,3 +1,5 @@
+
+// Button to scroll to the top of the page
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -11,6 +13,8 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// Reveal animations for sections
 
 const reveals = document.querySelectorAll(".reveal");
 
@@ -29,3 +33,35 @@ function revealOnScroll() {
 }
 
 window.addEventListener("scroll", revealOnScroll);
+
+// Typewriter effect for the header
+
+const typewriterElement = document.getElementById("typewriter");
+const textArray = ["Computer Science Student", "Web Developer", "Problem Solver"];
+let textIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textIndex].length) {
+    typewriterElement.textContent += textArray[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, 100);
+  } else {
+    setTimeout(erase, 2000);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    typewriterElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, 50);
+  } else {
+    textIndex = (textIndex + 1) % textArray.length;
+    setTimeout(type, 500);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (textArray.length) type();
+});
