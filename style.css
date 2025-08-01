@@ -133,10 +133,23 @@ nav a:hover {
 }
 
 /* About */
-.profile-img {
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-content .profile-img {
   max-width: 160px;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.about-content p {
+  flex: 1;
+  min-width: 260px;
+  text-align: justify;
 }
 
 /* Projects */
