@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
+
+  <meta property="og:title" content="Sami Finkbeiner | Portfolio">
+  <meta property="og:description" content="Developer & CS Student. Explore my projects and skills.">
+  <meta property="og:image" content="images/test_photo.jpg"> <!-- Optional -->
+  <meta property="og:type" content="website">
+
+  <title>Sami Finkbeiner | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -24,8 +30,13 @@
     <section id="about" class="section reveal">
       <div class="container">
         <h2>About Me</h2>
-        <img src="images/test_photo.jpg" alt="Your profile photo" class="profile-img">
-        <p>Hi! I'm a CS student passionate about building useful, elegant tools with code. I love learning new technologies and collaborating on creative projects. This site showcases some of my work—feel free to connect!</p>
+        <img src="images/profile_picture.jpg" alt="Profile picture" class="profile-img">
+        <p>Hi! I’m a computer science student who enjoys building practical and creative projects. 
+            I’m curious about how games work and love building things with Arduino.
+            I’m a quick learner, a team player, and I enjoy solving problems with others.
+            Outside of tech, I’m really into music and football.
+            This site showcases some of my work. Feel free to connect!
+        </p>
       </div>
     </section>
 
@@ -33,15 +44,21 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="project">
-          <h3>Project Title</h3>
-          <p>Brief description of the project. Built with X, Y, Z.</p>
+          <h3>FM for Ubuntu (C++)</h3>
+          <p>A compact, terminal-based football management game for two players. Designed as a personal exploration of probability and statistics in simulation games, FM for Ubuntu blends strategic choices with chance-driven outcomes to create competitive match experiences.</p>
+          <a href="https://github.com/zitherean/fmgame" target="_blank">View on GitHub</a>
+        </div>
+        
+        <div class="project">
+          <h3>Blackjack (C++)</h3>
+          <p>A terminal-based Blackjack game supporting up to 7 players. Built to simulate core gameplay mechanics like hit, stand, split, and double down, this project explores the decision-making logic and flow of turn-based card games in a local multiplayer setting.</p>
           <a href="https://github.com/zitherean/blackjack" target="_blank">View on GitHub</a>
         </div>
 
         <div class="project">
-          <h3>Another Project</h3>
-          <p>Another quick description of what it does or why it's cool.</p>
-          <a href="https://github.com/zitherean/fmgame" target="_blank">View on GitHub</a>
+          <h3>Tic-Tac-Toe (C++)</h3>
+          <p>A lightweight, terminal-based version of the classic two-player strategy game. Built in C++, it’s perfect for quick matches and showcases core logic and gameplay mechanics.</p>
+          <a href="https://github.com/zitherean/tictactoe" target="_blank">View on GitHub</a>
         </div>
 
         <!-- Add more projects as needed -->
@@ -51,7 +68,7 @@
     <section id="contact" class="section reveal">
       <div class="container">
         <h2>Contact</h2>
-        <p>Feel free to reach out via email or connect with me on GitHub.</p>
+        <p>Thanks for checking out my portfolio! Feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
         <ul>
             <li><i class="fas fa-envelope"></i> <a href="mailto:samifinkbeiner@gmail.com">samifinkbeiner@gmail.com</a></li>
             <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/samifinkbeiner/" target="_blank">samifinkbeiner</a></li>
