@@ -39,7 +39,7 @@ a:hover {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 /* Header */
@@ -103,18 +103,6 @@ nav a:hover {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-#about {
-  background-color: #fdfcfb;  /* almost white with a warm tint */
-}
-
-#projects {
-  background-color: #f9f5f1;  /* subtle ivory */
-}
-
-#contact {
-  background-color: #f3ece6;  /* light almond or warm sand */
-}
-
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -133,6 +121,10 @@ nav a:hover {
 }
 
 /* About */
+#about {
+  background-color: #fdfcfb; 
+}
+
 .about-content {
   display: flex;
   align-items: center;
@@ -149,10 +141,13 @@ nav a:hover {
 .about-content p {
   flex: 1;
   min-width: 260px;
-  text-align: justify;
 }
 
 /* Projects */
+#projects {
+  background-color: #f9f5f1; 
+}
+
 .project {
   background-color: white;
   border-radius: 8px;
@@ -178,6 +173,10 @@ nav a:hover {
 }
 
 /* Contact */
+#contact {
+  background-color: #f3ece6;  
+}
+
 #contact p {
   margin-bottom: 2rem;
 }
@@ -193,9 +192,9 @@ ul li {
 
 ul li i {
   margin-right: 0.5rem;
-  /* color: #007acc; Or whatever accent color you like */
 }
 
+/* Scroll to Top Button */
 #scrollTopBtn {
   position: fixed;
   bottom: 150px;

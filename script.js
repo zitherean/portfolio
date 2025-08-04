@@ -14,7 +14,6 @@ scrollBtn.addEventListener("click", () => {
 });
 
 // Reveal animations for sections
-
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
@@ -34,7 +33,6 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 
 // Typewriter effect for the header
-
 const typewriterElement = document.getElementById("typewriter");
 const textArray = ["Computer Science Student", "Developer", "Problem Solver"];
 let textIndex = 0;
@@ -65,8 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (textArray.length) type();
 });
 
-
-
 // Add rel="noopener noreferrer" to all external links
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll('a[target="_blank"]');
@@ -74,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     link.setAttribute("rel", "noopener noreferrer");
   });
 });
-
 
 // Update the year in the footer dynamically
 document.addEventListener("DOMContentLoaded", () => {
