@@ -1,4 +1,3 @@
-
 // Button to scroll to the top of the page
 const scrollBtn = document.getElementById("scrollTopBtn");
 
@@ -74,4 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
   links.forEach(link => {
     link.setAttribute("rel", "noopener noreferrer");
   });
+});
+
+
+// Update the year in the footer dynamically
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("year").textContent = new Date().getFullYear();
 });
