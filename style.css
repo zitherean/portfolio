@@ -197,7 +197,7 @@ ul li i {
 /* Scroll to Top Button */
 #scrollTopBtn {
   position: fixed;
-  bottom: 150px;
+  bottom: 190px;
   right: 40px;
   z-index: 1000;
   display: none;
@@ -247,10 +247,25 @@ footer {
   }
 
   #scrollTopBtn {
-    bottom: 9rem;
+    bottom: 10rem;
     right: 3px;
     width: 25px;
     height: 25px;
     font-size: 0.95rem;
+  }
+
+  /* Center all section text & images on mobile */
+  .section,
+  .section p,
+  .section h2,
+  .section ul {
+    text-align: center;
+  }
+
+  /* Make About section image stack and center */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
