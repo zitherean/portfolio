@@ -84,7 +84,11 @@ nav {
   justify-content: center;
   gap: 0.75rem;
   z-index: 1000;
-  border-top: 1px solid var(--header-bg); /* hides the seam */
+
+  /* seam killers */
+  margin-top: -3px;           /* overlap header by 3px */
+  transform: translateZ(0);   /* new layer for subpixel issues */
+  will-change: transform;
 }
 
 nav a {
