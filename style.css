@@ -145,6 +145,7 @@ nav a:hover {
 }
 
 .about-content p {
+  max-width: 850px;
   min-width: 260px;
   flex: 1;
 }
