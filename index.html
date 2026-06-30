@@ -8,7 +8,7 @@
   <!-- Update accordingly --> 
   <meta property="og:title" content="Sami Finkbeiner | Portfolio">
   <meta property="og:description" content="Developer & CS Graduate."> 
-  <meta property="og:image" content="images/profile_picture.jpg">
+  <meta property="og:image" content="assets/images/profile_picture.jpg">
   <meta property="og:type" content="website">
 
   <title>Sami Finkbeiner | Portfolio</title>
@@ -35,7 +35,7 @@
       <div class="container">
         <h2>About Me</h2>
         <div class="about-content">
-            <img src="images/profile_picture.jpg" alt="Profile picture" class="profile-img">
+            <img src="assets/images/profile_picture.jpg" alt="Profile picture" class="profile-img">
             <p>Hi! I'm a computer science graduate passionate about data science and analytics. 
               I love exploring data to uncover insights, build visualizations, and create practical tools that solve real world problems.
               I'm a quick learner, a team player, and I enjoy experimenting with new ideas. 
@@ -50,6 +50,36 @@
     <section id="projects" class="section reveal">
       <div class="container">
         <h2>Projects</h2>
+
+        <div class="project">
+          <h3>World Cup 2026 Predictions Game (HTML/CSS/JS, Supabase, Vercel)</h3>
+          <p>A browser based prediction game for the 2026 FIFA World Cup. 
+            The app includes login, match syncing, prediction saving, automatic points calculation, multilingual UI, and an archive for finished matches.</p>
+          <a href="https://github.com/zitherean/wc-predictions" target="_blank">View on GitHub</a>
+          <br>
+          <a href="https://wc-predictions-2026.vercel.app/" target="_blank">Launch App</a>
+        </div>
+
+        <div class="project">
+          <h3>Football Pass Detection from Match Tracking Data (Python, Machine Learning)</h3>
+          <p>A thesis project that used machine learning to detect football passes from match tracking data. 
+            The goal was to teach a model to recognize when a pass occurs based on player and ball movement patterns. 
+            The project compared several models, with XGBoost performing best, and produced a pipeline that could be extended to detect other football events or incorporate additional tracking dimensions.</p>
+          <a href="https://github.com/zitherean/bsc-thesis-pass-detection" target="_blank">View on GitHub</a>
+          <br>
+          <a href="assets/papers/pass_detection_thesis.pdf" target="_blank">Read Paper</a>
+        </div>   
+
+        <div class="project">
+          <h3>POS Tagging Model Comparison (Python, Machine Learning)</h3>
+          <p>A group machine learning project comparing Transformer and BiLSTM architectures for Part-of-Speech tagging. 
+            The project used the Universal Dependencies English EWT corpus and additional Brown corpus data to evaluate how both models perform across different dataset sizes, hyperparameters, and training conditions. 
+            The analysis found that BiLSTMs performed better on smaller datasets, while Transformers showed stronger scalability as more data was added.</p>
+          <a href="https://github.com/DanH3re/ml-project" target="_blank">View on GitHub</a>
+          <br>
+          <a href="assets/papers/pos_tagging_paper.pdf" target="_blank">Read Paper</a>
+        </div>        
+
         <div class="project">
           <h3>Player Comparison Dashboard (Python)</h3>
           <p>An interactive Streamlit app that compares football players across Europe’s top leagues using Understat data.
