@@ -19,7 +19,7 @@ window.addEventListener("scroll", revealOnScroll);
 
 // Typewriter effect for the header
 const typewriterElement = document.getElementById("typewriter");
-const textArray = ["Computer Science Student", "Developer", "Problem Solver"];
+const textArray = ["Computer Science Graduate", "Developer", "Problem Solver"];
 let textIndex = 0;
 let charIndex = 0;
 
